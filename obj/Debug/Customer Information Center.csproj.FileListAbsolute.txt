@@ -1,0 +1,11 @@
+C:\Code Projects\Customer Information Center\bin\Debug\Customer Information Center.exe.config
+C:\Code Projects\Customer Information Center\bin\Debug\Customer Information Center.exe
+C:\Code Projects\Customer Information Center\bin\Debug\Customer Information Center.pdb
+C:\Code Projects\Customer Information Center\obj\Debug\Customer Information Center.csprojAssemblyReference.cache
+C:\Code Projects\Customer Information Center\obj\Debug\Customer_Information_Center.Properties.Resources.resources
+C:\Code Projects\Customer Information Center\obj\Debug\Customer_Information_Center.TestForm.resources
+C:\Code Projects\Customer Information Center\obj\Debug\Customer Information Center.csproj.GenerateResource.cache
+C:\Code Projects\Customer Information Center\obj\Debug\Customer Information Center.csproj.CoreCompileInputs.cache
+C:\Code Projects\Customer Information Center\obj\Debug\Customer Information Center.exe
+C:\Code Projects\Customer Information Center\obj\Debug\Customer Information Center.pdb
+C:\Code Projects\Customer Information Center\obj\Debug\Customer_Information_Center.LoginForm.resources
