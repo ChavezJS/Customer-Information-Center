@@ -20,6 +20,9 @@ namespace Customer_Information_Center
         DateTime dateValue;
         string day;
 
+        //variables to hold information that gets inserted, updated, removed from the database
+        string mowingOptionSelected;
+
 
         public TestForm()
         {
@@ -49,7 +52,8 @@ namespace Customer_Information_Center
 
             //if statement to check to see if the adjusted day will fall on a weekend.  If it does,
             //the new date for "application 2" will be shifted 2 more days forward to make sure that 
-            //the date falls within the work week.
+            //the date falls within the work week. If the date falls during the work week, then the date
+            //shift of 45 days is used.
             if (day == "Sat" || day == "Sun") 
             {
                 dateTimePicker2.Value = dateTimePicker1.Value.AddDays(fourtySeven);
@@ -71,7 +75,8 @@ namespace Customer_Information_Center
 
             //if statement to check to see if the adjusted day will fall on a weekend.  If it does,
             //the new date for "application 3" will be shifted 2 more days forward to make sure that 
-            //the date falls within the work week.
+            //the date falls within the work week. If the date falls during the work week, then the date
+            //shift of 45 days is used.
             if (day == "Sat" || day == "Sun")
             {
                 dateTimePicker3.Value = dateTimePicker2.Value.AddDays(fourtySeven);
@@ -91,9 +96,10 @@ namespace Customer_Information_Center
             //week the adjusted date is.
             day = dateValue.ToString("ddd");
 
-             //if statement to check to see if the adjusted day will fall on a weekend.  If it does,
+            //if statement to check to see if the adjusted day will fall on a weekend.  If it does,
             //the new date for "application 4" will be shifted 2 more days forward to make sure that 
-            //the date falls within the work week.
+            //the date falls within the work week. If the date falls during the work week, then the date
+            //shift of 45 days is used.
             if (day == "Sat" || day == "Sun")
             {
                 dateTimePicker4.Value = dateTimePicker3.Value.AddDays(fourtySeven);
@@ -109,5 +115,19 @@ namespace Customer_Information_Center
             
         }
 
+        private void Label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //mowing options combo box
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            mowingOptionSelected = mowingOptionsCmbbx.SelectedItem.ToString();
+
+            //mowingLbl.Text = mowingOptionSelected;
+
+
+        }
     }
 }

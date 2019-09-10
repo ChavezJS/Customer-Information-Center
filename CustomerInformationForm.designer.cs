@@ -54,7 +54,7 @@
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.mowingOptionsCmbbx = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -80,6 +80,7 @@
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.button5 = new System.Windows.Forms.Button();
             this.dateLabel = new System.Windows.Forms.Label();
+            this.mowingLbl = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -154,6 +155,7 @@
             this.tableLayoutPanel2.Controls.Add(this.groupBox4, 6, 2);
             this.tableLayoutPanel2.Controls.Add(this.button5, 4, 4);
             this.tableLayoutPanel2.Controls.Add(this.dateLabel, 7, 4);
+            this.tableLayoutPanel2.Controls.Add(this.mowingLbl, 6, 4);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -338,7 +340,7 @@
             this.tableLayoutPanel4.Controls.Add(this.checkBox7, 4, 0);
             this.tableLayoutPanel4.Controls.Add(this.checkBox8, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.checkBox9, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.comboBox1, 2, 1);
+            this.tableLayoutPanel4.Controls.Add(this.mowingOptionsCmbbx, 2, 1);
             this.tableLayoutPanel4.Controls.Add(this.comboBox2, 3, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 16);
@@ -433,19 +435,20 @@
             this.checkBox9.Text = "Bug Spray";
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // mowingOptionsCmbbx
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.mowingOptionsCmbbx.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mowingOptionsCmbbx.FormattingEnabled = true;
+            this.mowingOptionsCmbbx.Items.AddRange(new object[] {
             "Weekly",
             "Bi-Weekly",
             "NONE"});
-            this.comboBox1.Location = new System.Drawing.Point(287, 75);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 7;
-            this.comboBox1.Text = "Mowing Options";
+            this.mowingOptionsCmbbx.Location = new System.Drawing.Point(287, 75);
+            this.mowingOptionsCmbbx.Name = "mowingOptionsCmbbx";
+            this.mowingOptionsCmbbx.Size = new System.Drawing.Size(121, 21);
+            this.mowingOptionsCmbbx.TabIndex = 7;
+            this.mowingOptionsCmbbx.Text = "Mowing Options";
+            this.mowingOptionsCmbbx.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -735,6 +738,16 @@
             this.dateLabel.TabIndex = 15;
             this.dateLabel.Text = "label13";
             // 
+            // mowingLbl
+            // 
+            this.mowingLbl.AutoSize = true;
+            this.mowingLbl.Location = new System.Drawing.Point(1425, 247);
+            this.mowingLbl.Name = "mowingLbl";
+            this.mowingLbl.Size = new System.Drawing.Size(41, 13);
+            this.mowingLbl.TabIndex = 16;
+            this.mowingLbl.Text = "label13";
+            this.mowingLbl.Click += new System.EventHandler(this.Label13_Click);
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -797,7 +810,7 @@
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox mowingOptionsCmbbx;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox9;
@@ -819,5 +832,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.Label mowingLbl;
     }
 }
